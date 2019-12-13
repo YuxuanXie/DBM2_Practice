@@ -14,6 +14,8 @@ for t in {"taken_", "upload_"}:
 df = df.drop(columns=["user", "tags", "title", "date_taken"])
 df = df.head(100)
 
+
+
 kmeans = MiniBatchKMeans(batch_size=3, max_iter=10).fit(df)
 
 df["category"] = kmeans.predict(df.head(100))
