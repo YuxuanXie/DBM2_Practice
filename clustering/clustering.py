@@ -23,6 +23,9 @@ group = df.groupby(["category"])
 
 
 
+
+
+
 # for index, row in df.iterrows() :
 #   plt.scatter(row["lat"], row["long"], c=row["category"])
 
