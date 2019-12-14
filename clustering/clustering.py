@@ -12,19 +12,18 @@ for t in {"taken_", "upload_"}:
   df = df.drop(columns = ["date_" + t + key for key in time.keys()])
 
 df = df.drop(columns=["user", "tags", "title", "date_taken"])
-df = df.head(100)
 
-kmeans = MiniBatchKMeans(batch_size=3, max_iter=10).fit(df)
+# df = df.head(100000)
 
-df["category"] = kmeans.predict(df.head(100))
-
-group = df.groupby(["category"])
+kmeans = MiniBatchKMeans(batch_size=100000, max_iter=1000000).fit(df)
 
 
+df["category"] = kmeans.predict(df)
 
+groups = df.groupby(["category"])
 
-
-
+for name, group in groups:
+  plt.scatter(group["long"],group["lat"] )
 
 # for index, row in df.iterrows() :
 #   plt.scatter(row["lat"], row["long"], c=row["category"])
