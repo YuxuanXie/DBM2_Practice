@@ -1,0 +1,11 @@
+# latex output files
+*.log
+*.aux 
+*.pdf 
+*.synctex.gz
+*.bbl
+*.blg
+*.fdb_latexmk
+*fls
+*out
+
