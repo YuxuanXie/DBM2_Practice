@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ccf2c34-f468-41bb-9bc2-515b407ce0a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clustering/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/clustering/clustering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clustering/report/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/clustering/report/report.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
