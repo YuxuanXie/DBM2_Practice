@@ -12,6 +12,7 @@ for t in {"taken_", "upload_"}:
   df = df.drop(columns = ["date_" + t + key for key in time.keys()])
 
 df = df.drop(columns=["id", "user", "tags", "title", "date_taken", "date_upload"])
+
 df  = df.drop_duplicates(subset=None, keep='first', inplace=False)
 
 #normalize the data, for time 
