@@ -17,7 +17,7 @@ df  = df.drop_duplicates(subset=None, keep='first', inplace=False)
 #normalize the data, for time 
 #remove doubles
 
-kmeans = MiniBatchKMeans(batch_size=100000, max_iter=1000000, n_clusters=12).fit(df)
+kmeans = MiniBatchKMeans(batch_size=100000, max_iter=1000000, n_clusters=50).fit(df)
 # kmeans = DBSCAN(eps=3,min_samples=2).fit(df);
 BBox = ((df["lat"].min(),   df["lat"].max(), df["long"].min(), df["long"].max()))
 
