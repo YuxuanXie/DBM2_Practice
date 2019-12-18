@@ -14,23 +14,23 @@ We use python to process our data, train our model and predict.
 %
 Our data set came from Flick which is a Yahoo photo sharing system and consists of locations, upload time, user id and description, etc.. 
 %
-But we just used locations we wanted to find acctractive regions.
+But we just used locations we wanted to find attractive regions.
 %
 We found that we have to set the size of different clusterings to find the clearest results.
 
 \par
 
-At first we got our results and just ploted it without map. We just wanted to make sure it works.
+At first we got our results and just plotted it without map. We just wanted to make sure it works.
 %
-The first time we converted many colums to one colum "date upload time" and useed category to represent it.
+The first time we converted many columns to one colum "date upload time" and used category to represent it.
 %
 And we trained based on location, user id, picture id and upload time.  
 %
 The point cloud we got was really fuzzy, there was no cluster actually.
 %
-Finally, we found that that was because we used so many non relevant colums.
+Finally, we found that that was because we used so many non relevant columns.
 %
-After we droped some other columns except locations, it was very clear.
+After we dropped some other columns except locations, it was very clear.
 %
 We could get something explicitly through out plotting.
 
@@ -41,10 +41,6 @@ And we grouped them based on the same predict result and ploted group by group.
 %
 We found that tete park and bellecour were really attractive.
  
-
-
-
-
 \section*{Implementation}
 \par
 We decided to just implement clustering in Python without KNIME. Immediately we ran into issues with the size of the the initial dataset.
