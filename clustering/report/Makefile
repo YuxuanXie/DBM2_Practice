@@ -1,3 +1,10 @@
+
+ifeq ($(UNAME_S), Darwin)
+	EDITOR = open
+else
+	EDITOR = evince 
+endif
+
 all:
 	pdflatex report
-	evince report.pdf
+	$(EDITOR) report.pdf
